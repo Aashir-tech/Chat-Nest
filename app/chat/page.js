@@ -37,7 +37,7 @@ const Chat = () => {
         transition={{ delay: 0.6, duration: 0.5 }}
         className="text-gray-400 text-lg max-w-md"
       >
-        We're working on something exciting! Soon you'll be able to connect
+        We&apos;re working on something exciting! Soon you&apos;ll be able to connect
         privately with friends in real-time. Stay tuned ✨
       </motion.p>
     </div>

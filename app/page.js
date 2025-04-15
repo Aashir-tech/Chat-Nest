@@ -304,7 +304,7 @@ export default function Home() {
               >
                 <p className={`${darkMode ? "text-white" : "text-gray-950"} mb-4`}>
                   <FaQuoteLeft className="inline mr-2" />
-                  <span className="italic">"{testimonial.quote}"</span>
+                  <span className="italic">{testimonial.quote}</span>
                 </p>
                 <h4 className={`${darkMode ? "text-gray-50" : "text-gray-900"} font-semibold text-center`}>
                   {testimonial.name}
