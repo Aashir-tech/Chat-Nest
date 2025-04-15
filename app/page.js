@@ -60,7 +60,7 @@ export default function Home() {
       }`}
     >
       {/* Theme Toggle */}
-      <div className="absolute top-25 right-4 z-10">
+      <div className="absolute top-20 right-6 z-10">
         <button
           onClick={toggleTheme}
           className={`p-3 rounded-full ${

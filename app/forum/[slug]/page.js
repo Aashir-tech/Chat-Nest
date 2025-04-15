@@ -6,9 +6,12 @@ export default async function Page({ params }) {
   const user = await currentUser();
   const { slug } = await params;
 
+  // const darkMode = localStorage.getItem("theme");
+  // console.log("Dark Mode : " , darkMode);
+
   return (
     <>
- <Navbar />
+    <Navbar />
     <ChatForum
       slug={slug}
       clerkUser={{

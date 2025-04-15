@@ -42,12 +42,12 @@ const Forums = () => {
   return (
     <>
     <Navbar />
-    <div className="containe mx-auto my-10">
+    <div className="container mx-auto my-10 flex-wrap">
       <h3 className="text-5xl font-semibold text-center flex gap-2 justify-center mb-10">Discussion Forums</h3>
 
       <div className="flex flex-wrap justify-center">
         {topics.map((topic) => (
-          <div key={topic.img}  className="shadow-lg bg-slate-200 w-1/4 m-4 flex justify-center flex-col items-center py-10 rounded-xl gap-4">
+         <div key={topic.img} className="shadow-lg bg-slate-200 w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 m-4 flex justify-center flex-col items-center py-10 rounded-xl gap-4">
             <Image alt={topic.desc} src={topic.img} width={74} height={74} />
             <h2 className="text-2xl font-semibold text-center">{topic.text}</h2>
             <p className="px-3 text-center">{topic.desc}</p>

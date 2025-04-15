@@ -119,7 +119,7 @@ const ChatForum = ({ clerkUser, slug }) => {
   if (!client || !channel) return <div className="min-h-screen bg-gray-950 text-white text-2xl flex justify-center items-center flex-col">JOINING THE {slug.toUpperCase()} FORUM </div>;
 
   return (
-    <Chat client={client} theme='str-chat__theme-dark'>
+    <Chat client={client}>
       <Channel channel={channel}>
         <Window>
           <ChannelHeader />
