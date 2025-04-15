@@ -101,16 +101,22 @@ const ChatForum = ({ clerkUser, slug }) => {
   useEffect(() => {
     if (!client) return;
 
-    const channel = client.channel('messaging', slug, {
-      image: 'https://getstream.io/random_png/?name=react',
-      name: slug.toUpperCase() + " Discussion " ,
-      members: [userId],
-    });
-
-    setChannel(channel);
+    const initChannel = async () => {
+      const channel = client.channel('messaging', slug, {
+        image: `https://getstream.io/random_png/?name=react`,
+        name: `${slug.toUpperCase()} Discussion`,
+        members: [userId],
+      });
+  
+      await channel.watch(); //  connects and loads the channel
+  
+      setChannel(channel);   // Now it's ready to render
+    };
+  
+    initChannel();
   }, [client]);
 
-  if (!client) return <div className="min-h-screen bg-gray-950 text-white text-2xl flex justify-center items-center flex-col">JOINING THE {slug.toUpperCase()} FORUM </div>;
+  if (!client || !channel) return <div className="min-h-screen bg-gray-950 text-white text-2xl flex justify-center items-center flex-col">JOINING THE {slug.toUpperCase()} FORUM </div>;
 
   return (
     <Chat client={client} theme='str-chat__theme-dark'>
