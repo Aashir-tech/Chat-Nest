@@ -11,12 +11,21 @@ export async function POST(request) {
   const token = serverClient.createToken(user.data.id);
   await serverClient.upsertUser({ id: user.data.id });
 
+  // await serverClient.updateUserMetadata({
+  //   id: 'aashir8',
+  //   name: 'Chat Nest',
+  // });
+
+  // console.log("Server Client " , serverClient);
+
   const client = await clerkClient();
   await client.users.updateUserMetadata(user.data.id, {
     publicMetadata: {
       token: token,
     },
   });
+
+  console.log("Client " , client)
 
   const slugs = ["python-new", "js-new", "webdev-new", "ai-new", "tech-new"];
 

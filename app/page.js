@@ -60,7 +60,7 @@ export default function Home() {
       }`}
     >
       {/* Theme Toggle */}
-      <div className="absolute top-20 right-6 z-10">
+      <div className="absolute sm:top-20 top-20 sm:right-5 right-2 z-10">
         <button
           onClick={toggleTheme}
           className={`p-3 rounded-full ${
@@ -319,7 +319,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className={`${darkMode ? "bg-gray-950" : "bg-gray-50"} py-10 px-6 `}>
+      <footer className={`${darkMode ? "bg-gray-950" : "bg-gray-50 hover:text-black"} py-10 px-6 `}>
         <div className="max-w-6xl mx-auto flex flex-col items-center space-y-8">
           <h3 className="text-2xl text-cyan-400 font-bold">
             Subscribe to our Newsletter
@@ -333,7 +333,7 @@ export default function Home() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className={`${darkMode ? "text-white-950" : "text-gray-950"} w-full px-5 py-2 rounded-xl `}
+                className={`${darkMode ? "text-white-950" : "text-gray-950"} bg-gray-200 w-full px-5 py-2 rounded-xl `}
                 required
               />
 
@@ -346,15 +346,15 @@ export default function Home() {
             </button>
           </form>
 
-          <div className={`${darkMode ? "text-gray-400" : "text-gray-950"
-          } flex space-x-6 `}>
-            <Link href="#" className="hover:text-white">
+          <div className={`${darkMode ? "text-gray-400" : "text-gray-700"
+          }  flex space-x-6 `}>
+            <Link href="#" className={`${darkMode ? "hover:text-white" : "hover:text-gray-950"}`}>
               Privacy
             </Link>
-            <Link href="/about" className="hover:text-white">
+            <Link href="/about" className={`${darkMode ? "hover:text-white" : "hover:text-gray-950"}`}>
               About us
             </Link>
-            <Link href="/contact" className="hover:text-white">
+            <Link href="/contact" className={`${darkMode ? "hover:text-white" : "hover:text-gray-950"}`}>
               Contact
             </Link>
           </div>

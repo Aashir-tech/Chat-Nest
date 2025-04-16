@@ -43,20 +43,23 @@ const Navbar = ({darkMode}) => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <Link href="/" className="hover:text-cyan-400 text-cyan-400 font-semibold transition">
+          <Link href="/" className="hover:text-cyan-400 text-cyan-500 font-semibold transition">
             Home
           </Link>
-          <Link href="/forums" className="hover:text-cyan-400 text-cyan-400 font-semibold  transition">
+          <Link href="/forums" className="hover:text-cyan-400 text-cyan-500 font-semibold  transition">
             Forums
           </Link>
-          <Link href="/about" className="hover:text-cyan-400 text-cyan-400 font-semibold  transition">
+          <Link href="/about" className="hover:text-cyan-400 text-cyan-500 font-semibold  transition">
             About
           </Link>
-          <Link href="/contact" className="hover:text-cyan-400 text-cyan-400 font-semibold  transition">
+          <Link href="/contact" className="hover:text-cyan-400 text-cyan-500 font-semibold  transition">
             Contact
           </Link>
           {/* <Link href="/profile" className="hover:text-cyan-400 transition"> */}
+          <div className="scale-140">
             <UserButton />
+
+          </div>
           {/* </Link> */}
         </div>
 
