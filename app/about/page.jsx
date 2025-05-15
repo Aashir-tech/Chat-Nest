@@ -204,7 +204,7 @@ export default function AboutPage() {
               {
                 name: "Aashir Haris",
                 title: "CEO & Founder",
-                image: "/api/placeholder/300/300"
+                image: "/images/me.jpg"
               }
             ].map((member, index) => (
               <motion.div

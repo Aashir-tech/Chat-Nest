@@ -138,8 +138,6 @@ useEffect(() => {
           offset: 0,
         });
 
-
-
         console.log("All Users from stream " , response.users)
 
   

@@ -78,7 +78,6 @@ export default function Home() {
        <div className="max-w-8xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between relative">
         {/* Decorative elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {/* <div className={`absolute -top-24 -left-24 w-64 h-64 rounded-full blur-3xl opacity-20 ${darkMode ? 'bg-cyan-700' : 'bg-cyan-500'}`}></div> */}
           <div className={`absolute top-1/3 -right-24 w-72 h-72 rounded-full blur-3xl opacity-20 ${darkMode ? 'bg-purple-700' : 'bg-purple-500'}`}></div>
         </div>
 
@@ -202,7 +201,7 @@ export default function Home() {
         }
       `}</style>
 
-      {/* Why Chat Nest */}
+      {/* Why Chat nest section */}
       <section className={`${
         darkMode ? "bg-gray-950 text-gray-900" : "bg-gray-50 text-gray-900"
       } py-16 px-6`}>
