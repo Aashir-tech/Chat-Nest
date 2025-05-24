@@ -46,6 +46,9 @@ const Navbar = ({darkMode}) => {
           <Link href="/" className="hover:text-cyan-400 text-cyan-500 font-semibold transition">
             Home
           </Link>
+          <Link href="/chat" className="hover:text-cyan-400 text-cyan-500 font-semibold  transition">
+            Chat
+          </Link>
           <Link href="/forums" className="hover:text-cyan-400 text-cyan-500 font-semibold  transition">
             Forums
           </Link>

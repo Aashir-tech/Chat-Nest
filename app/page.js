@@ -183,8 +183,6 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-
-      {/* Add this CSS to your global styles */}
       <style jsx global>{`
         .text-gradient-cyan {
           background: linear-gradient(to right, #67e8f9, #06b6d4);
